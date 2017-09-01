@@ -10,13 +10,14 @@
 	        console.log( len );
 		 	if( flag == len ){
 		 		$('.loading').addClass('hide');
+		 		init();
 		 	}
 	    }
  	}
  	var android_url = 'http://www.i618.com.cn/i618/htqf/htqf5714.apk';
  	var apple_url = 'https://itunes.apple.com/cn/app/hui-tong-qi-fu/id982205587?mt=8';
 
- 	init();
+ 	
 
  	function init(){
  		$("#ido").fullpage({
