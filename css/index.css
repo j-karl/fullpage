@@ -105,6 +105,10 @@ body {
   font-size: 20px;
 }
 
+.loading.hide {
+  display: none;
+}
+
 .section {
   position: relative;
   font-size: 0.2rem;
