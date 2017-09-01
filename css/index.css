@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, button, input, textarea {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 64.375px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 120px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 250px;
+  }
+}
+
+body {
+  color: #FFFFFF;
+}
+
+.section {
+  position: relative;
+  font-size: 0.2rem;
+  overflow: hidden;
+}
+
+.section1 {
+  background-color: #ffffff;
+}
+
+.section1 .app1_banner {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.section1 .app1_word {
+  position: absolute;
+  width: 95%;
+  left: 50%;
+  top: auto;
+  bottom: 23%;
+  transform: translate3d(-50%, 120%, 0);
+  opacity: 0;
+}
+
+.section1 .app1_download {
+  left: 50%;
+  transform: translate3d(-50%, 100%, 0);
+  opacity: 0;
+}
+
+.section1.act .app1_word {
+  transform: translate3d(-50%, 0%, 0);
+  opacity: 1;
+  transition: all 0.8s cubic-bezier(0.44, 0, 0.87, 0.8);
+  transition-delay: 200ms;
+}
+
+.section1.act .app1_download {
+  transform: translate3d(-50%, 0%, 0);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  transition-delay: 300ms;
+}
+
+.section2 {
+  background-color: #fff;
+  text-align: center;
+}
+
+.section2 .quan {
+  width: 23%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.section2 .ball {
+  width: 45%;
+  position: absolute;
+  top: 170px;
+  left: -12px;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  z-index: 6;
+  transform: translate3d(0, -100%, 0);
+  transition-delay: 1.8s;
+}
+
+.section2 .app2_bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+  transform: translate3d(0, 105%, 0) scale(0);
+  opacity: 0;
+}
+
+.section2 .app2_word {
+  position: absolute;
+  width: 75%;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  margin: auto;
+  opacity: 0;
+}
+
+.section2.act .quan {
+  transition: all 0.8s cubic-bezier(0.44, 0, 0.87, 0.8);
+  transition-delay: 200ms;
+  opacity: 1;
+  transform: translate3d(0, 35%, 0);
+}
+
+.section2.act .ball {
+  transition: all 0.8s cubic-bezier(0.44, 0, 0.87, 0.8);
+  transition-delay: 200ms;
+  opacity: 1;
+  transform: translate3d(0, 95%, 0);
+}
+
+.section2.act .app2_bg {
+  opacity: 1;
+  transition: all 0.8s ease;
+  transform: translate3d(0, 90%, 0) scale(1);
+}
+
+.section2.act .app2_word {
+  opacity: 1;
+}
+
+.section3 {
+  background-color: #fff;
+}
+
+.section3 .zhi {
+  width: 23%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.section3 .deng {
+  width: 40%;
+  position: absolute;
+  top: 160px;
+  left: 15px;
+  right: 0;
+  margin: auto;
+  z-index: 6;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+.section3 .app3_bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+  transform: translate3d(0, 105%, 0) scale(0);
+  opacity: 0;
+}
+
+.section3 .app3word {
+  width: 63%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+  margin: auto;
+  opacity: 0;
+}
+
+.section3.act .zhi {
+  transition: all 0.8s cubic-bezier(0.44, 0, 0.87, 0.8);
+  transition-delay: 200ms;
+  opacity: 1;
+  transform: translate3d(0, 35%, 0);
+}
+
+.section3.act .deng {
+  transition: opacity 1.5s ease;
+  opacity: 1;
+}
+
+.section3.act .app3_bg {
+  opacity: 1;
+  transition: all 0.8s ease;
+  transform: translate3d(0, 90%, 0) scale(1);
+}
+
+.section3.act .app3word {
+  opacity: 1;
+}
+
+.section4 {
+  background-color: #fff;
+}
+
+.section4 .mei {
+  width: 23%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+.section4 .app4_bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+  transform: translate3d(0, 105%, 0) scale(0);
+  opacity: 0;
+}
+
+.section4 .phone {
+  width: 35%;
+  position: absolute;
+  top: 195px;
+  left: 15px;
+  right: 0;
+  margin: auto;
+  z-index: 6;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.section4 .app4_word {
+  width: 63%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+  margin: auto;
+  opacity: 0;
+}
+
+.section4.act .mei {
+  transition: all 0.8s cubic-bezier(0.44, 0, 0.87, 0.8);
+  transition-delay: 200ms;
+  opacity: 1;
+  transform: translate3d(0, 35%, 0);
+}
+
+.section4.act .app4_bg {
+  opacity: 1;
+  transition: all 0.8s ease;
+  transform: translate3d(0, 90%, 0) scale(1);
+}
+
+.section4.act .phone {
+  opacity: 1;
+  top: 175px;
+  transition: all 0.6s ease;
+}
+
+.section4.act .app4_word {
+  opacity: 1;
+}
+
+.section5 .app5_bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section5 .app5 {
+  bottom: 22%;
+  left: 50%;
+  transform: translate3d(-50%, 100%, 0);
+  opacity: 0;
+}
+
+.section5 .goldHolder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section5 .goldHolder img {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transition: all 1.5s 0.6s ease-in;
+}
+
+.section5 .goldDui {
+  width: 125%;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+.section5 .goldOne {
+  width: 70px;
+  position: absolute;
+  right: 15%;
+  transition: all 1s ease;
+  bottom: -14%;
+}
+
+.section5.act .app5 {
+  transform: translate3d(-50%, 0%, 0);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+  transition-delay: 300ms;
+}
+
+.section5.act .goldDui {
+  bottom: -4%;
+  transition: all 1s ease;
+  transition-delay: 1500ms;
+}
+
+.section5.act .goldOne {
+  animation: upup 3s ease 1.6s forwards;
+}
+
+@keyframes upup {
+  0% {
+    bottom: -14%;
+  }
+  65% {
+    bottom: 14%;
+  }
+  100% {
+    bottom: 4%;
+  }
+}
+
+@font-face {
+  font-family: 'arrowDown';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+}
+
+.arrowDown {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: auto;
+  font-family: 'arrowDown';
+  font-size: 22px;
+  animation: upDown 1.2s linear infinite;
+  text-align: center;
+  line-height: 30px;
+  color: #ff3131;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translate3d(0, 0px, 0);
+  }
+  25% {
+    transform: translate3d(0, 8px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0px, 0);
+  }
+  75% {
+    transform: translate3d(0, -8px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.noapp {
+  width: 5rem;
+  height: 3rem;
+  background: white;
+  border-radius: 0.1rem;
+  border: 1px solid #D3D3D3;
+  font-size: 0.32rem;
+  margin: auto;
+  text-align: center;
+  line-height: 2rem;
+  opacity: 1;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: #000;
+  box-shadow: 0 0 0.2rem #4B4B4B;
+}
+
+.noapp.active {
+  top: 2.5rem;
+  opacity: 1;
+}
+
+.ok {
+  width: 100%;
+  height: 0.8rem;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.8rem;
+  letter-spacing: 0.1rem;
+  border-top: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  transition: all 0.2s ease;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+
+.ok:active {
+  background: #FF8673;
+}
+
+#wxalert {
+  width: 100%;
+  height: 100%;
+  background: black url("../images/xiazai.png") no-repeat center top;
+  background-size: 100% auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1100;
+  display: none;
+}
+
+.download {
+  width: 3rem;
+  height: 0.8rem;
+  font-size: 0.34rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12%;
+  margin: auto;
+  text-align: center;
+  line-height: 0.75rem;
+  border: 1px solid #ff4646;
+  border-radius: 0.4rem;
+  background: linear-gradient(to bottom, #ffb83c 0%, #f8112b 100%);
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
