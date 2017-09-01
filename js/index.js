@@ -1,20 +1,51 @@
  $(function() {
+ 	var optss = {
+		  lines: 12 
+		, length: 5 
+		, width: 2
+		, radius: 6
+		, scale: 1.0 
+		, corners: 1 
+		, color: '#B7B7B7'
+		, opacity: 0.25
+		, rotate: 0
+		, direction: 1 
+		, speed: 1 
+		, trail: 100 
+		, fps: 20 
+		, zIndex: 2e9
+		, className: 'spinner'
+		, top: '40%'
+		, left: '50%'
+		, shadow: false
+		, hwaccel: false 
+		, position: 'absolute'
+		}
+
+	var target = document.getElementById('loading')
+	var spinner = new Spinner(optss).spin(target);
+
+
  	var flag = 0;
- 	// console.log( $('img') );
  	var len = $('img').length;
+
  	console.log(len);
+
  	for(var j=0;j<len;j++){
 	 	$('img')[j].onload =function() {
 	 		flag += 1;
 	        console.log(flag);
 	        console.log( len );
 		 	if( flag == len ){
-		 		$('.loading').addClass('hide');
-		 		init();
+		 		// setTimeout(function(){
+			 		$('.loading').addClass('hide');
+		 			init();
+		 		// },2000);
 		 	}
 	    }
  	}
- 	var android_url = 'http://www.i618.com.cn/i618/htqf/htqf5714.apk';
+
+ 	var android_url = 'http://www.i618.com.cn/i618/htqf/htqf5717.apk';
  	var apple_url = 'https://itunes.apple.com/cn/app/hui-tong-qi-fu/id982205587?mt=8';
 
  	
@@ -32,7 +63,7 @@
 	        	if( index == 1 ){
 	        		bub1 = setTimeout(function(){
 	        			$('.section1').addClass('act');
-	        		},10);
+	        		},100);
 	        	}
 	        	if( index == 2 ){
 	        		bub2 = setTimeout(function(){
